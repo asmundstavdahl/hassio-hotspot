@@ -14,7 +14,4 @@ rm -rf /var/cache/apk/*
 COPY hostapd.conf /
 COPY dnsmasq.conf /
 
-COPY run.sh /
-RUN chmod a+x /run.sh
-
-CMD [ "/run.sh" ]
+CMD [ "service", "start", "hassio-hotspot" ]
