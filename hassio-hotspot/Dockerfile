@@ -14,4 +14,4 @@ rm -rf /var/cache/apk/*
 COPY hostapd.conf /
 COPY dnsmasq.conf /
 
-CMD [ "/usr/bin/tail" ]
+CMD [ "/etc/services.d/hassio-hotspot/run" ]
